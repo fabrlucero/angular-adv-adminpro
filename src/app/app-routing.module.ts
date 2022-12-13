@@ -6,6 +6,7 @@ import { NopagefoundComponent } from "./nopagefound/nopagefound.component";
 const route: Routes = [
     {path: '', loadChildren:() => import('./pages/pages.module').then(m => m.PagesModule)},
     {path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)},
+    
     { path: '**', component: NopagefoundComponent }
 ]
 
