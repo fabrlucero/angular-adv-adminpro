@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { ChartData, ChartEvent, ChartType } from 'chart.js';
 
 @Component({
   selector: 'app-grafical',
   templateUrl: './grafical.component.html',
   styleUrls: ['./grafical.component.css']
 })
-export class GraficalComponent implements OnInit {
+export class GraficalComponent {
 
-  constructor() { }
+  labels1: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
+  data1: any[] = [
+    { data: [ 350, 450, 100 ] }
+  ]
 
-  ngOnInit(): void {
-  }
-
+  labels2: string[] = [ 'Accesorios', 'HHP', 'Wearables' ];
+  data2: any[] = [
+    { data: [ 80, 50, 40 ] }
+  ]
 }

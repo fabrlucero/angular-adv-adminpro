@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 import { PagesRoutingModule } from './pages-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
-
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { ComponentsModule } from '../components/components.module';
     SharedModule,
     RouterModule,
     PagesRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    NgChartsModule
   ],
   exports: [
     DashboardComponent,
