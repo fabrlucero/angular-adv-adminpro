@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 import { NgChartsModule } from 'ng2-charts';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesaComponent } from './promesa/promesa.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     ProgressComponent,
     GraficalComponent,
     PagesComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesaComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
